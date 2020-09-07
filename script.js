@@ -4,10 +4,11 @@ var a = function a(){
     const cherio=require('cherio');
 const request=require('request');
 const fs=require('fs')
+
 const download=require('node-image-downloader');
 
 
-var x="https://placey2.com/";
+var x=document.getElementById('url');
 var WriteStream  = fs.createWriteStream("ImagesLink.txt", "UTF-8")
 
 request(x,(err,resp,html)=>{
