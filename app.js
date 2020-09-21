@@ -60,6 +60,11 @@ app.post("/", function(req, res) {
     
     
   res.send("Url data  " + num1); 
+ res.write('<html><body>');
+          res.write('<img src="' + Links + '" />');
+          res.write('</body></html>');
+          res.end(); 
+            
 }); 
   
 app.listen(3000, function(){ 
